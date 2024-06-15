@@ -9,8 +9,17 @@ def local_css(file_name):
 
 local_css("hspfstyle.css")
 
-region = boto3.Session().region_name
-session = boto3.Session(region_name=region)
+# Ensure your region and credentials are set correctly
+aws_access_key_id = "AKIA4MTWK35ML3TMH5C3"
+aws_secret_access_key = "7whjY6uW9z6GPJGkUZR1x/BDLXgvjZoC173KfAs1"
+region = "us-east-1"
+
+session = boto3.Session(
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    region_name=region
+)
+
 lambda_client = session.client('lambda')
 
 # Function to generate presigned URL for S3 object
