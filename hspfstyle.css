@@ -1,0 +1,75 @@
+/* style.css */
+
+/* Einbindung der Schriftart Roboto */
+@font-face {
+    font-display: swap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: url('/typo3conf/ext/wr_hspfo/Resources/Public/webpack/static/fonts/roboto-cyrillic-ext-300-normal12d37040.woff2') format('woff2'),
+         url('/typo3conf/ext/wr_hspfo/Resources/Public/webpack/static/fonts/roboto-all-300-normal8fc5f5f2.woff') format('woff');
+    unicode-range: U+0460-052f, U+1c80-1c88, U+20b4, U+2de0-2dff, U+a640-a69f, U+fe2e-fe2f;
+}
+
+.avatar {
+    width: 100px; /* Breite des Avatars */
+    height: 100px; /* Höhe des Avatars */
+    border-radius: 50%; /* Runder Avatar */
+    object-fit: cover; /* Bild passend zuschneiden */
+}
+
+/* Hintergrundfarbe und Schriftart */
+body {
+    background-color: #E5E5E5; /* Hintergrundfarbe */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header-Design */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #FFD700; /* HSPF Blau */
+    padding: 10px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Textfarbe */
+.text-color {
+    color: #555555; /* Neue Textfarbe aus dem Bild */
+}
+
+/* Button-Design */
+.stButton>button {
+    background-color: #003399; /* HSPF Blau */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.stButton>button:hover {
+    background-color: #002266; /* Dunkleres Blau */
+}
+
+/* Expander-Design */
+.st-expanderHeader {
+    background-color: #003399; /* HSPF Blau */
+    color: white;
+}
+
+.st-expanderContent {
+    background-color: #E5E5E5; /* Leichtes Grau */
+}
+
+/* Neue Farbe hinzufügen */
+.new-color {
+    background-color: #FFD700; /* Neue Farbe aus dem Bild */
+}

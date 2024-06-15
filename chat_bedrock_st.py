@@ -17,7 +17,7 @@ bedrock_runtime = boto3.client(
 @st.cache_resource
 def load_llm():
     llm = Bedrock(client=bedrock_runtime, model_id="anthropic.claude-v2")
-    llm.model_kwargs = {"temperature": 0.7, "max_tokens_to_sample": 2048}
+    llm.model_kwargs = {"temperature": 0.0, "max_tokens_to_sample": 2048}
 
     model = ConversationChain(llm=llm, verbose=True, memory=ConversationBufferMemory())
 
