@@ -1,7 +1,7 @@
 import streamlit as st
 import boto3
 import json
-
+region = 'us-east-1'
 # CSS einbinden
 def local_css(file_name):
     with open(file_name) as f:
